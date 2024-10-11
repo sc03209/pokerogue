@@ -3,7 +3,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export const defaultConfig = {
 	plugins: [tsconfigPaths() as any],
-	server: { host: '0.0.0.0', port: 8000 },
+	server: { host: '0.0.0.0', port: 8048 },
 	clearScreen: false,
 	build: {
 		minify: 'esbuild' as const,
