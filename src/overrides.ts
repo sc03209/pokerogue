@@ -63,23 +63,23 @@ class DefaultOverrides {
   readonly STARTING_BIOME_OVERRIDE: Biome = Biome.TOWN;
   readonly ARENA_TINT_OVERRIDE: TimeOfDay | null = null;
   /** Multiplies XP gained by this value including 0. Set to null to ignore the override */
-  readonly XP_MULTIPLIER_OVERRIDE: number | null = null;
+  readonly XP_MULTIPLIER_OVERRIDE: number | null = 2;
   readonly NEVER_CRIT_OVERRIDE: boolean = false;
   /** default 1000 */
-  readonly STARTING_MONEY_OVERRIDE: number = 0;
+  readonly STARTING_MONEY_OVERRIDE: number = 5000;
   /** Sets all shop item prices to 0 */
-  readonly WAIVE_SHOP_FEES_OVERRIDE: boolean = false;
+  readonly WAIVE_SHOP_FEES_OVERRIDE: boolean = true;
   /** Sets reroll price to 0 */
-  readonly WAIVE_ROLL_FEE_OVERRIDE: boolean = false;
-  readonly FREE_CANDY_UPGRADE_OVERRIDE: boolean = false;
+  readonly WAIVE_ROLL_FEE_OVERRIDE: boolean = true;
+  readonly FREE_CANDY_UPGRADE_OVERRIDE: boolean = true;
   readonly POKEBALL_OVERRIDE: { active: boolean; pokeballs: PokeballCounts } = {
-    active: false,
+    active: true,
     pokeballs: {
       [PokeballType.POKEBALL]: 5,
       [PokeballType.GREAT_BALL]: 0,
       [PokeballType.ULTRA_BALL]: 0,
       [PokeballType.ROGUE_BALL]: 0,
-      [PokeballType.MASTER_BALL]: 0,
+      [PokeballType.MASTER_BALL]: 500,
     },
   };
   /** Forces an item to be UNLOCKED */
@@ -165,13 +165,13 @@ class DefaultOverrides {
   // -------------
   // EGG OVERRIDES
   // -------------
-  readonly EGG_IMMEDIATE_HATCH_OVERRIDE: boolean = false;
+  readonly EGG_IMMEDIATE_HATCH_OVERRIDE: boolean = true;
   readonly EGG_TIER_OVERRIDE: EggTier | null = null;
   readonly EGG_SHINY_OVERRIDE: boolean = false;
   readonly EGG_VARIANT_OVERRIDE: VariantTier | null = null;
-  readonly EGG_FREE_GACHA_PULLS_OVERRIDE: boolean = false;
+  readonly EGG_FREE_GACHA_PULLS_OVERRIDE: boolean = true;
   readonly EGG_GACHA_PULL_COUNT_OVERRIDE: number = 0;
-  readonly UNLIMITED_EGG_COUNT_OVERRIDE: boolean = false;
+  readonly UNLIMITED_EGG_COUNT_OVERRIDE: boolean = true;
 
   // -------------------------
   // MYSTERY ENCOUNTER OVERRIDES
